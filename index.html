@@ -1,36 +1,246 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aishion's portfilio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hikari Nihongo - Sparkly Japanese Learning Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Nunito:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <nav>
+    <a class="nav-logo" href="#home" aria-label="Hikari Nihongo home">
+      <span>光</span>
+      <div class="logo-text">
+        <strong>Hikari Nihongo</strong>
+        <small>kawaii learning guild</small>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#kana">Kana Lab</a></li>
+      <li><a href="#dialogue">Dialogue</a></li>
+      <li><a href="#progress">Progress</a></li>
+    </ul>
+  </nav>
 
-    <h1>Aishion kobayashi portfoilo</h1>
-    <h2>I'm a creator</h2>
-    <hr />
-    <h3><a href="./public/movie-ranking.html">Movie ranking project</a></h3>
-    <img src="./assets/images/image.png" height="200" alt="movie raking list"/>
-    <h3><a href="./public/birthday-invite.html">Aishion birthday party</a></h3>
-    <img src="./assets/images/cake.png" height="200" alt="cake"/>
-    <hr />
-    <a href="./public/about.html">About aishion</a> <br />
-    <a href="./public/contact.html">contact aishion</a>
-    
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-card">
+        <div class="badge"><div class="sparkle">☆</div>Inspired by Studio Dreams</div>
+        <h1>Make Japanese study feel like a <span>magical girl transformation</span>.</h1>
+        <p>
+          Join Hikari and friends in pastel dreamscapes, mini visual novels, and fluffy flashcards that cheer you on with every
+          new word. Cute chibi mentors, cozy vibes, and sparkling progress await!
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button">Start Free Quest</button>
+          <a class="btn btn-ghost" href="#journey">Preview Lessons</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-chibi-group">
+          <figure class="chibi-card chibi-hikari">
+            <svg viewBox="0 0 160 200" role="presentation" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="hairGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ffa6d6" />
+                  <stop offset="100%" stop-color="#ff7bfa" />
+                </linearGradient>
+                <linearGradient id="dressGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#fdf2ff" />
+                  <stop offset="100%" stop-color="#c5d8ff" />
+                </linearGradient>
+              </defs>
+              <circle cx="80" cy="68" r="54" fill="url(#hairGradient)" />
+              <rect x="36" y="110" width="88" height="70" rx="32" fill="url(#dressGradient)" />
+              <circle cx="58" cy="70" r="10" fill="#36224d" />
+              <circle cx="102" cy="70" r="10" fill="#36224d" />
+              <path d="M60 98 Q80 114 100 98" stroke="#36224d" stroke-width="6" fill="none" stroke-linecap="round" />
+              <path d="M48 54 Q58 40 80 44 Q102 40 112 54" stroke="#ffeffa" stroke-width="10" stroke-linecap="round" fill="none" />
+              <circle cx="40" cy="136" r="10" fill="#ffd9e8" />
+              <circle cx="120" cy="136" r="10" fill="#ffd9e8" />
+              <path d="M60 170 Q80 186 100 170" stroke="#ff91c8" stroke-width="12" stroke-linecap="round" fill="none" />
+            </svg>
+            <figcaption>Hikari · Cheer captain</figcaption>
+          </figure>
+          <figure class="chibi-card chibi-sora">
+            <svg viewBox="0 0 160 200" role="presentation" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="hairGradientSora" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#9be7ff" />
+                  <stop offset="100%" stop-color="#6d9bff" />
+                </linearGradient>
+                <linearGradient id="hoodieGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f0fff9" />
+                  <stop offset="100%" stop-color="#b4ffe4" />
+                </linearGradient>
+              </defs>
+              <circle cx="80" cy="72" r="56" fill="url(#hairGradientSora)" />
+              <rect x="40" y="116" width="80" height="68" rx="28" fill="url(#hoodieGradient)" />
+              <circle cx="58" cy="78" r="10" fill="#23304f" />
+              <circle cx="102" cy="78" r="10" fill="#23304f" />
+              <path d="M60 108 Q80 122 100 108" stroke="#23304f" stroke-width="6" fill="none" stroke-linecap="round" />
+              <path d="M52 56 Q80 38 108 56" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" />
+              <circle cx="40" cy="140" r="10" fill="#bfffe7" />
+              <circle cx="120" cy="140" r="10" fill="#bfffe7" />
+              <path d="M62 168 Q80 180 98 168" stroke="#64d6ff" stroke-width="10" stroke-linecap="round" fill="none" />
+            </svg>
+            <figcaption>Sora · Study buddy</figcaption>
+          </figure>
+        </div>
+        <ul class="floating-emotes">
+          <li>✧</li>
+          <li>♡</li>
+          <li>⋆</li>
+          <li>✿</li>
+        </ul>
+        <div class="floating-badge">Streak: <span>21 days</span></div>
+      </div>
+    </section>
+
+    <section class="journey-section" id="journey">
+      <h2 class="section-title">Choose your learning arc</h2>
+      <p class="section-subtitle">
+        Unlock a living world of Japanese through cinematic modules, voiced dialogues, and quests that adapt to your pace. Each
+        arc is sprinkled with pastel stickers, sparkles, and mascot cheers to keep motivation high.
+      </p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">あ</div>
+          <h3>Kana Bootcamp</h3>
+          <p>Speed-run Hiragana &amp; Katakana recognition with rhythm drills and adorable mascot feedback.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3>Quest Stories</h3>
+          <p>Make choices in branching anime-style episodes while collecting new grammar spells and expressions.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🎧</div>
+          <h3>Voice Studio</h3>
+          <p>Shadow native speakers, check your pitch accent, and unlock seiyuu-inspired voice badges.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🌸</div>
+          <h3>Culture Drops</h3>
+          <p>Mini documentaries &amp; etiquette guides make sure you’re ready for hanami picnics and maid cafés alike.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="flashcard-section" id="kana">
+      <h2 class="section-title">Kana Lab</h2>
+      <p class="section-subtitle">
+        Tap a card to reveal the reading. Try to remember the sound before you flip—perfect warm-up before diving into longer
+        dialogues.
+      </p>
+      <div class="flashcard-mascot" aria-hidden="true">
+        <div class="mascot-bubble">"Ganbatte!"</div>
+        <figure>
+          <svg viewBox="0 0 120 160" role="presentation" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="mascotHair" x1="0%" x2="100%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#ffd1dc" />
+                <stop offset="100%" stop-color="#ffb4c8" />
+              </linearGradient>
+              <linearGradient id="mascotOutfit" x1="0%" x2="100%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#fff6d1" />
+                <stop offset="100%" stop-color="#ffddb0" />
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="48" r="44" fill="url(#mascotHair)" />
+            <rect x="30" y="92" width="60" height="52" rx="22" fill="url(#mascotOutfit)" />
+            <circle cx="44" cy="52" r="8" fill="#2f1d3d" />
+            <circle cx="76" cy="52" r="8" fill="#2f1d3d" />
+            <path d="M45 74 Q60 84 75 74" stroke="#2f1d3d" stroke-width="5" fill="none" stroke-linecap="round" />
+            <circle cx="36" cy="104" r="8" fill="#ffe4ed" />
+            <circle cx="84" cy="104" r="8" fill="#ffe4ed" />
+          </svg>
+          <figcaption>Chibi Mochi cheers you on!</figcaption>
+        </figure>
+      </div>
+      <div class="flashcard-wrapper" id="flashcard-grid" aria-live="polite"></div>
+      <p class="flashcard-note">Tip: Mix in your own vocabulary by editing the deck inside <strong>Hikari Pro</strong>.</p>
+    </section>
+
+    <section class="dialogue-section" id="dialogue">
+      <div class="dialogue-card">
+        <div class="dialogue-header">
+          <div>
+            <h3>Daily Dialogue Spark</h3>
+            <p class="dialogue-meta" id="dialogue-topic">Theme: Café Meetup</p>
+          </div>
+          <button class="btn btn-primary" id="new-dialogue" type="button">New Scenario</button>
+        </div>
+        <div class="dialogue-lines" id="dialogue-lines"></div>
+      </div>
+      <div class="dialogue-illustration" aria-hidden="true">
+        <div class="dialogue-chibi">
+          <span class="speech-bubble">"Let's chat!"</span>
+          <div class="dialogue-heart">❤</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-section" id="progress">
+      <h2 class="section-title">Track your hero stats</h2>
+      <p class="section-subtitle">
+        Set small goals, celebrate streaks, and earn charms every time you complete a mission. Upgrade from beginner mage to
+        fluent storyteller.
+      </p>
+      <div class="progress-grid">
+        <article class="progress-card" data-level="Lv.1">
+          <h4>Starfall Beginner</h4>
+          <p>Master both kana sets and 120 core words. Recommended for brand-new explorers.</p>
+          <div class="progress-meter"><span style="width: 65%"></span></div>
+        </article>
+        <article class="progress-card" data-level="Lv.2">
+          <h4>Neo Tokyo Intermediate</h4>
+          <p>Conquer JLPT N4 grammar with anime interview practice and lyric translations.</p>
+          <div class="progress-meter"><span style="width: 45%"></span></div>
+        </article>
+        <article class="progress-card" data-level="Lv.3">
+          <h4>Skyline Advanced</h4>
+          <p>Dive into manga raws, express nuance, and prep for life abroad or industry gigs.</p>
+          <div class="progress-meter"><span style="width: 28%"></span></div>
+        </article>
+      </div>
+      <div class="progress-charms" aria-hidden="true">
+        <div class="charm">🌈</div>
+        <div class="charm">🍡</div>
+        <div class="charm">✨</div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="join">
+      <div class="cta-card">
+        <h2 class="section-title">Join a community of bilingual dreamers</h2>
+        <p>
+          Sign up today and access weekly live lessons, cosplay-friendly meetups, and challenges that feel like leveling up your
+          favorite RPG hero.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button">Claim Starter Pack</button>
+          <a class="btn btn-ghost" href="mailto:hello@hikarinihongo.jp">Talk to a Mentor</a>
+        </div>
+        <div class="cta-chibis" aria-hidden="true">
+          <div class="cta-chibi">(＾▽＾)</div>
+          <div class="cta-chibi">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Hikari Nihongo · Crafted with love for learners and anime fans everywhere.
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
