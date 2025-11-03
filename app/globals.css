@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-foreground min-h-screen antialiased;
+  background: radial-gradient(circle at top left, rgba(59,130,246,0.15), transparent 55%),
+    radial-gradient(circle at top right, rgba(236,72,153,0.12), transparent 60%),
+    rgba(10, 12, 24, 0.92);
+}
+
+a {
+  @apply text-primary underline-offset-4 hover:underline;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: hsla(215, 20%, 65%, 0.3);
+  border-radius: 9999px;
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-subtle rounded-3xl;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.45);
+}
